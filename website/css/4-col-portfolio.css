@@ -1,0 +1,22 @@
+body {
+  padding-top: 54px;
+}
+
+.navbar-custom {
+  background-color: #ffffff;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
