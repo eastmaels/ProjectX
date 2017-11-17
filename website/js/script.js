@@ -32,14 +32,14 @@ function generatePreview(article, post)
 
   const preview =
   {
-    text: () => `<p class="text-title">` + post.title + `</p>`,
+    text: () => ` <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="#">`+ post.title + `</a>
+                    </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                  </div>`,
 
-    image: () => 
-    (
-      `<div key={imagePath}>
-        <img class="preview" src="` + imagePath + `"/>
-      </div>`
-    ),
+    image: () => `<img class="card-img-top" src="` + imagePath + `" alt="">`,
   };
 
    const bodyData = [];
